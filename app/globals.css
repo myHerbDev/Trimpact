@@ -76,6 +76,8 @@
 }
 
 /* Google-style card design */
-.card {
-  @apply bg-white rounded-lg shadow-google p-4;
+@layer utilities {
+  .shadow-google {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 }
