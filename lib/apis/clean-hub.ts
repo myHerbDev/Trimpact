@@ -25,4 +25,3 @@ export async function cleanHubCalculate(treeCount: number): Promise<ImpactData> 
     throw new Error("Failed to calculate CleanHub impact")
   }
 }
-

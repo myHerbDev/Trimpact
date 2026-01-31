@@ -127,4 +127,3 @@ class IntegrationManager {
 
 // Export singleton instance
 export const integrationManager = new IntegrationManager()
-

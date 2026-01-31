@@ -48,4 +48,3 @@ export function ImpactCounter({ title, count, unit = "", icon }: ImpactCounterPr
     </Card>
   )
 }
-

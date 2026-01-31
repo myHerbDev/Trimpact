@@ -25,4 +25,3 @@ export async function oneTreePlantedCalculate(treeCount: number): Promise<Impact
     throw new Error("Failed to calculate One Tree Planted impact")
   }
 }
-

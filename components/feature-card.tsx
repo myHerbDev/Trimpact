@@ -26,4 +26,3 @@ export function FeatureCard({ title, description, icon, number }: FeatureCardPro
     </Card>
   )
 }
-

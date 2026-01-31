@@ -17,4 +17,3 @@ export function DayPicker(props: DayPickerProps) {
   // The actual implementation is in the Calendar component
   return <div {...props} />
 }
-

@@ -25,4 +25,3 @@ export async function greensparkCalculate(treeCount: number): Promise<ImpactData
     throw new Error("Failed to calculate Greenspark impact")
   }
 }
-

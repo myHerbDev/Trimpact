@@ -45,4 +45,3 @@ export async function calculateImpact(treeCount: number) {
     throw new Error("Failed to calculate environmental impact")
   }
 }
-

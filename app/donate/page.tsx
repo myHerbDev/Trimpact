@@ -12,20 +12,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Checkbox } from "@/components/ui/checkbox"
 import { useToast } from "@/components/ui/use-toast"
-import {
-  CreditCard,
-  DollarSign,
-  TreesIcon as Tree,
-  Calendar,
-  Gift,
-  Heart,
-  Share2,
-  Mail,
-  Facebook,
-  Twitter,
-  Instagram,
-  Info,
-} from "lucide-react"
+import { CreditCard, DollarSign, Trees as Tree, Calendar, Gift, Heart, Share2, Mail, Facebook, Twitter, Instagram, Info, AlertTriangle } from "lucide-react"
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { ProjectCard } from "@/components/project-card"
 import {
   Dialog,
@@ -270,6 +258,14 @@ export default function DonatePage() {
           <h1 className="text-3xl font-bold tracking-tight">Plant Trees, Change Lives</h1>
           <p className="text-gray-500 mt-2">Your donation directly supports reforestation projects around the world</p>
         </div>
+
+        <Alert variant="destructive" className="mb-8 border-amber-500 bg-amber-50 text-amber-900 dark:bg-amber-950 dark:text-amber-200 dark:border-amber-800">
+          <AlertTriangle className="h-5 w-5 text-amber-600 dark:text-amber-400" />
+          <AlertTitle className="text-amber-800 dark:text-amber-300 font-semibold">Demo Application Notice</AlertTitle>
+          <AlertDescription className="text-amber-700 dark:text-amber-400">
+            This is a demonstration application for testing purposes only. Please do not enter real payment information, credit card numbers, or any personal financial details. All payment fields are simulated and not connected to actual payment processors.
+          </AlertDescription>
+        </Alert>
 
         {!donationCompleted ? (
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -702,7 +698,7 @@ export default function DonatePage() {
                     </div>
                   </div>
 
-                  <Button type="button" variant="outline" className="w-full" onClick={() => setShowShareDialog(true)}>
+                  <Button type="button" variant="outline" className="w-full bg-transparent" onClick={() => setShowShareDialog(true)}>
                     <Share2 className="mr-2 h-4 w-4" />
                     Invite Friends to Donate
                   </Button>
@@ -801,15 +797,15 @@ export default function DonatePage() {
             <div>
               <h3 className="text-sm font-medium mb-2">Share on Social Media</h3>
               <div className="flex gap-2">
-                <Button variant="outline" className="flex-1" onClick={() => handleSocialShare("Facebook")}>
+                <Button variant="outline" className="flex-1 bg-transparent" onClick={() => handleSocialShare("Facebook")}>
                   <Facebook className="mr-2 h-4 w-4" />
                   Facebook
                 </Button>
-                <Button variant="outline" className="flex-1" onClick={() => handleSocialShare("Twitter")}>
+                <Button variant="outline" className="flex-1 bg-transparent" onClick={() => handleSocialShare("Twitter")}>
                   <Twitter className="mr-2 h-4 w-4" />
                   Twitter
                 </Button>
-                <Button variant="outline" className="flex-1" onClick={() => handleSocialShare("Instagram")}>
+                <Button variant="outline" className="flex-1 bg-transparent" onClick={() => handleSocialShare("Instagram")}>
                   <Instagram className="mr-2 h-4 w-4" />
                   Instagram
                 </Button>
@@ -850,4 +846,3 @@ export default function DonatePage() {
     </div>
   )
 }
-

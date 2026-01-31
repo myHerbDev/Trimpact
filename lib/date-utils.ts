@@ -334,4 +334,3 @@ export function min(dates: (Date | string)[]): Date {
 
   return new Date(Math.min(...dateTimes))
 }
-

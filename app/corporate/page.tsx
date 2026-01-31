@@ -767,4 +767,3 @@ export default function CorporatePage() {
     </div>
   )
 }
-

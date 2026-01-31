@@ -166,4 +166,3 @@ function getIntegrationDescription(type: IntegrationType): string {
       return "Connect with external services"
   }
 }
-

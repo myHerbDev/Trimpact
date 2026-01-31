@@ -71,4 +71,3 @@ export function ResultsCard({ title, data, treeCount }: ResultsCardProps) {
     </div>
   )
 }
-

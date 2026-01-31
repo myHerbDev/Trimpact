@@ -73,4 +73,3 @@ export async function nativeShare(options: {
     return false
   }
 }
-

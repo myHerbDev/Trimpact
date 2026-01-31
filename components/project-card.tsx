@@ -47,4 +47,3 @@ export function ProjectCard({ project }: ProjectCardProps) {
     </Card>
   )
 }
-

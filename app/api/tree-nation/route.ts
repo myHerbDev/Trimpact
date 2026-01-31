@@ -17,4 +17,3 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Failed to calculate Tree-Nation impact" }, { status: 500 })
   }
 }
-
